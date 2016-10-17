@@ -1,0 +1,8 @@
+Img Classes:
+  Destination Show Page (Each Activity image) = activity_img
+
+
+Divs in Destination Show page = activity_div
+Small images on side of big = small_img
+small images div to make it a column = column_img
+review div containing avatar, rating, and review = review_div

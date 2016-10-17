@@ -1,0 +1,67 @@
+// Place all the styles related to the destinations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.destination_h1{
+  font-family: 'Quicksand', sans-serif;
+
+}
+.continent_drop {
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  // display: flex;
+  // align-items: flex-end;
+
+}
+
+.activity_img{
+  height: 150px;
+  width: 150px;
+}
+.show_footer{
+  border: 1px solid red;
+  position: fixed;
+  bottom: 0;
+  height: 330px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity_div{
+   border: 1px solid black;
+   width: 300px;
+}
+.small_img{
+  height: 150px;
+  width: 220px;
+  padding: 3px;
+}
+.activity_pic_div{
+  display: flex;
+  padding-bottom: 15px;
+}
+.column_img{
+  display: flex;
+  flex-direction: column;
+}
+.review_div{
+  border: 1px solid black;
+  height: 500px;
+  width: 100%;
+}
+aside{
+  border: 1px solid black;
+  height: 100%;
+  width: 25%;
+
+}
+.user_avatar{
+  height: 75px;
+   width: 75px;
+   border-radius: 50%;
+   border: 2px black solid;
+}

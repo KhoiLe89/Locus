@@ -1,0 +1,10 @@
+<h1 class= "destination_show"> <%= @destination.location %> </h1>
+<p> <%= @destination.description %> </p>
+
+<footer class="show_footer">
+  <% @destination.activities.each do |activity| %>
+  <div class="activity_div">
+    <img class="activity_img" src="<%= activity.img_url  %>">
+  </div>
+  <% end %>
+</footer>
