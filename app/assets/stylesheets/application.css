@@ -13,16 +13,26 @@
  *= require_tree .
  *= require_self
  */
+ *{
+   margin: 0;
+ }
 .main_body{
-  background-image: url("http://wallcook.com/wp-content/uploads/abstract/orange-stripes-white-background.jpg");
+  /*background-image: url("http://wallcook.com/wp-content/uploads/abstract/orange-stripes-white-background.jpg");*/
+  background-color: #E6E7EB;
+  
 }
 
-#logo{
+/*#logo{
   background-color: #D0D5DB;
   background-blend-mode: multiply;
   height: 50px;
   width: 50px;
-}
+}*/
 html{
   overflow-y: scroll;
+}
+nav{
+  font-size: 20px;
+  height: 30px;
+  background-color: #FF9F00;
 }

@@ -8,3 +8,5 @@
   </div>
   <% end %>
 </footer>
+<%= link_to "Add an Activity", new_destination_activity_path(@destination) %>
+<%= link_to "delete", destination_path(@destination), method: :delete %>

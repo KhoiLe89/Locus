@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161017181155) do
+ActiveRecord::Schema.define(version: 20161017203723) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20161017181155) do
     t.integer "rating"
     t.string  "body"
     t.integer "activity_id"
+    t.string  "quote"
     t.index ["activity_id"], name: "index_reviews_on_activity_id", using: :btree
   end
 

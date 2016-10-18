@@ -4,18 +4,26 @@
 
 <div class = "activity_pic_div">
 <img src= "<%=@activity.img_url%>">
-<div class="column_img">
-<img class="small_img" src= "<%=@activity.img_url2%>">
-<img class="small_img" src= "<%=@activity.img_url3%>">
-<img class="small_img" src= "<%=@activity.img_url4%>">
-</div>
-</div>
-<div class="review_div">
-  <aside class ="user_info">
-    <img class ="user_avatar" src ="http://cdn.history.com/sites/2/2015/03/hungry-history-vomitoriums-fact-or-fiction_Corbis-E.jpeg">
+  <div class="column_img">
+    <img class="small_img" src= "<%=@activity.img_url2%>">
+    <img class="small_img" src= "<%=@activity.img_url3%>">
+    <img class="small_img" src= "<%=@activity.img_url4%>">
+  </div>
+  <aside class="address_div">
+
   </aside>
-  <%= @activity.reviews.each do |review| %>
-  <div>
+</div>
+<div class="review_add">
+  <h3># of reviews from our Locus Users </h3>
+  <button class="button"><%=link_to "Write a Review", new_activity_review_path(@activity)%></button>
+</div>
+<aside class ="user_info">
+  <img class ="user_avatar" src ="http://cdn.history.com/sites/2/2015/03/hungry-history-vomitoriums-fact-or-fiction_Corbis-E.jpeg">
+</aside>
+<div class="review_div">
+  <% @activity.reviews.each do |review| %>
+  <div class="quote_div">
+    <h3 class="quote"><%=link_to "Quote goes here", edit_review_path(review) %>  </h3>
     <%= review.body %>
   </div>
 <% end %>

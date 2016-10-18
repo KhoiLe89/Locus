@@ -6,4 +6,5 @@ root "destinations#index"
   resources :activities do
   resources :reviews
     end
+    resources :reviews
 end

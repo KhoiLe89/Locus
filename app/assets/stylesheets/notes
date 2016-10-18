@@ -6,3 +6,10 @@ Divs in Destination Show page = activity_div
 Small images on side of big = small_img
 small images div to make it a column = column_img
 review div containing avatar, rating, and review = review_div
+
+
+user avatar and info = user_info
+
+quote and body = quote_div
+
+address div on the right of images= address_div

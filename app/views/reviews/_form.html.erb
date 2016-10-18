@@ -1,0 +1,14 @@
+<%= form_for ([@activity, @review]) do |f| %>
+
+<%= f.label :quote %>
+<%= f.text_field :quote %> <br>
+
+<%= f.label :rating %>
+<%= f.text_field :rating %><br>
+
+<%= f.label :body %>
+<%= f.text_area :body %><br>
+
+<%= f.submit %>
+
+<% end %>
