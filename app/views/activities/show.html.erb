@@ -17,17 +17,18 @@
   <h3># of reviews from our Locus Users </h3>
   <button class="button"><%=link_to "Write a Review", new_activity_review_path(@activity)%></button>
 </div>
-<aside class ="user_info">
-  <img class ="user_avatar" src ="http://cdn.history.com/sites/2/2015/03/hungry-history-vomitoriums-fact-or-fiction_Corbis-E.jpeg">
-</aside>
-<div class="review_div">
-  <% @activity.reviews.each do |review| %>
-  <div class="quote_div">
-    <h3 class="quote"><%=link_to "Quote goes here", edit_review_path(review) %>  </h3>
-    <%= review.body %>
+<div class="body_div">
+  <aside class ="user_info">
+    <img class ="user_avatar" src ="http://cdn.history.com/sites/2/2015/03/hungry-history-vomitoriums-fact-or-fiction_Corbis-E.jpeg">
+  </aside>
+  <div class="review_div">
+    <% @activity.reviews.each do |review| %>
+    <div class="quote_div">
+      <h3 class="quote"><%=link_to "Quote goes here", edit_review_path(review) %>  </h3>
+      <%= review.body %>
+    </div>
+  <% end %>
   </div>
-<% end %>
 </div>
-
 
 <%= link_to "Delete", activity_path(@activity), method: :delete %>

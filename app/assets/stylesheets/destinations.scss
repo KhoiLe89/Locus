@@ -3,23 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .destination_h1{
   font-family: 'Quicksand', sans-serif;
-
 }
 .continent_drop {
   font-family: 'Quicksand', sans-serif;
-
 }
 
 body{
   font-family: 'Quicksand', sans-serif;
   // display: flex;
   // align-items: flex-end;
-
-}
-
-.activity_img{
-  height: 150px;
-  width: 150px;
 }
 .show_footer{
   border: 1px solid red;
@@ -30,7 +22,11 @@ body{
   display: flex;
   justify-content: space-between;
 }
-
+.activity_img{
+  height: 150px;
+  width: 150px;
+  box-shadow: 10px 10px 5px grey;
+}
 .activity_div{
    border: 1px solid black;
    width: 300px;
@@ -64,10 +60,15 @@ body{
   justify-content: space-between;
   background-color: white;
 }
+.body_div{
+  border: 1px solid black;
+  height: 1000px;
+  display: flex;
+}
 .review_div{
   border: 1px solid black;
   height: 500px;
-  width: 700px;
+  width: 600px;
   display: flex;
   padding-top: 15px;
   display: flex;
@@ -90,7 +91,7 @@ aside{
 }
 .quote_div{
   border: 1px solid black;
-  height: 45%;
+  height: 150px;
 }
 .quote{
   color: #4EC0FC;
