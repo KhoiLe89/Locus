@@ -4,5 +4,6 @@ class ContinentsController < ApplicationController
   end
   def show
     @continent = Continent.find(params[:id])
+    
   end
 end

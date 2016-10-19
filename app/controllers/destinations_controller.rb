@@ -1,11 +1,12 @@
 class DestinationsController < ApplicationController
   def index
-    @continents = Continent.all
-    @destinations = Destination.all
+    @continent = Continent.find(params[:continent_id])
+    @destinations = @continent.destinations
+
   end
   def show
     @destination = Destination.find(params[:id])
-
+    @activity = Activity.find(params[:id])
   end
   def new
     @continent = Continent.find(params[:continent_id])

@@ -1,1 +1,6 @@
-<h1> Activity Test </h2>
+<h1> All the activities of PLACEHOLDER </h1>
+<ul>
+<% @activities.each do |activity| %>
+<li><%=link_to activity.name, activity_path(activity) %></li>
+<% end %>
+</ul>

@@ -1,16 +1,6 @@
-<div class="index_div">
-<h1 class="destination_h1"> Which continent would you like to visit? </h1>
-<% @continents.each do |continent| %>
-  <div class="<%=continent.name%>"> <%=link_to continent.name, continents_path %>(+) </div>
+<ul>
+<% @destinations.each do |destination| %>
+<li><%= link_to destination.location, activities_path %></li>
 <% end %>
-<!-- <ul>
-
-  <% @destinations.each do |destination| %>
-<%=link_to "#{destination.location}", destination_path(destination) %>
-  <% end %>
-</ul> -->
-<%= link_to "Add a new Destination", new_continent_destination_path(continent) %>
-
-
-
-</div>
+</ul>
+<%= link_to "Add a new Destination", new_continent_destination_path(@continent) %>
