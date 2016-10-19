@@ -1,7 +1,8 @@
 class ActivitiesController < ApplicationController
   def index
-    @activities = Activity.all
-    
+    @destination = Destination.find(params[:destination_id])
+    @activities = @destination.activities
+
   end
   def show
     @activity = Activity.find(params[:id])

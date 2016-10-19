@@ -4,10 +4,6 @@ class DestinationsController < ApplicationController
     @destinations = @continent.destinations
 
   end
-  def show
-    @destination = Destination.find(params[:id])
-    @activity = Activity.find(params[:id])
-  end
   def new
     @continent = Continent.find(params[:continent_id])
     @destination = @continent.destinations.new
@@ -15,7 +11,11 @@ class DestinationsController < ApplicationController
   def create
     @continent = Continent.find(params[:continent_id])
     @destination = @continent.destinations.create(destination_params)
-    redirect_to destination_path(@destination)
+    redirect_to continent_destinations_path(@destination)
+  end
+  def show
+    @destination = Destination.find(params[:id])
+    @activity = Activity.find(params[:id])
   end
   def edit
     @destination = Destination.find(params[:id])
