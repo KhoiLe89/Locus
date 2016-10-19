@@ -9,7 +9,7 @@ class DestinationsController < ApplicationController
   end
   def new
     @continent = Continent.find(params[:continent_id])
-    @destination = Destination.new
+    @destination = @continent.destinations.new
   end
   def create
     @continent = Continent.find(params[:continent_id])

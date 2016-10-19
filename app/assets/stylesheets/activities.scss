@@ -1,3 +1,83 @@
 // Place all the styles related to the activities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.activity_img{
+  height: 150px;
+  width: 150px;
+  box-shadow: 10px 10px 5px grey;
+}
+.activity_div{
+   border: 1px solid black;
+   width: 300px;
+}
+.small_img{
+  height: 150px;
+  width: 220px;
+  padding: 3px;
+}
+.activity_pic_div{
+  display: flex;
+  padding-bottom: 15px;
+  border: 1px solid black;
+}
+.column_img{
+  display: flex;
+  flex-direction: column;
+
+}
+.address_div{
+  height: 450px;
+  border: 1px solid black;
+  display: flex;
+  padding: 20px;
+}
+.review_add{
+  border: 1px solid red;
+  height: 50px;
+  padding: 0 15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.body_div{
+  border: 1px solid black;
+  height: 1000px;
+  display: flex;
+  
+}
+.review_div{
+  border: 1px solid black;
+  height: 500px;
+  width: 600px;
+  display: flex;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+aside{
+  border: 1px solid black;
+  height: 100%;
+  width: 25%;
+
+}
+.user_info{
+  height: 500px;
+
+}
+.user_avatar{
+  height: 75px;
+   width: 75px;
+   border-radius: 50%;
+   border: 2px black solid;
+}
+.quote_div{
+  border: 1px solid black;
+  height: 150px;
+}
+.quote{
+  color: #4EC0FC;
+}
+.button{
+  font-family: 'Quicksand', sans-serif;
+  background-color: #FF9F00;
+}

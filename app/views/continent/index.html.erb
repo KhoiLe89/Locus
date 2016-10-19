@@ -3,13 +3,8 @@
 <% @continents.each do |continent| %>
   <div class="<%=continent.name%>"> <%=link_to continent.name, continents_path %>(+) </div>
 <% end %>
-<!-- <ul>
 
-  <% @destinations.each do |destination| %>
-<%=link_to "#{destination.location}", destination_path(destination) %>
-  <% end %>
-</ul> -->
-<%= link_to "Add a new Destination", new_continent_destination_path(continent) %>
+<%= link_to "Add a new Destination", new_continent_destination_path([:continent_id]) %>
 
 
 

@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-root "destinations#index"
-  resources :destinations do
-  resources :activities, except: [:index, :show]
+root "continent#index"
+  resources :destinations, only: [:index, :show] do
+    resources :activities, except: [:index, :show]
     end
   resources :activities do
   resources :reviews
     end
     resources :reviews
     resources :continents
+    resources :continents do
+      resources :destinations
+    end
 end
