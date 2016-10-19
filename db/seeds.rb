@@ -13,10 +13,10 @@ Continent.destroy_all
 
 africa = Continent.create(name: "Africa")
 asia = Continent.create(name: "Asia")
-australia = Continent.create(name: "Austrailia")
+australia = Continent.create(name: "Australia")
 europe = Continent.create(name: "Europe")
-north_america = Continent.create(name: "North America")
-south_america = Continent.create(name: "South America")
+usa = Continent.create(name: "North_America")
+south_america = Continent.create(name: "South_America")
 
 italy = Destination.create(location: "Italy", description: "Arguably Europe’s most enticing country, Italy charms visitors with irresistible food, awesome architecture, diverse scenery and unparalleled art. In fact, it's so packed with possibilities it can almost overwhelm.", img_url: "https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/10/GettyImages-535829613_super.jpg", continent: europe)
 paris = Destination.create(location: "France", description: "The City of Light draws millions of visitors every year with its unforgettable ambiance. Of course, the divine cuisine and vast art collections deserve some of the credit as well. The gentle River Seine rambles through the city, flanked by stately museums, centuries-old churches, and blocks of Rococo- and Neoclassic-design architecture, further enhanced by charming trees and glowing streetlamps. Peppering the Seine's cobbled walks and graceful bridges are impossibly chic Parisians, probably on their way to the market, cafe or cinema.", img_url: "http://static.travel.usnews.com/images/destinations/86/eiffel1.jpg", continent: europe)

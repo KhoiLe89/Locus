@@ -13,3 +13,5 @@ user avatar and info = user_info
 quote and body = quote_div
 
 address div on the right of images= address_div
+
+each continent name = its class name

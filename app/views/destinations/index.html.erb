@@ -1,18 +1,16 @@
+<div class="index_div">
 <h1 class="destination_h1"> Which continent would you like to visit? </h1>
-
-<h3 class="continent_drop"> Africa (+) </h3>
-<h3 class="continent_drop"> Asia (+) </h3>
-
-<h3 class="continent_drop"> Austrailia (+)</h3>
-<h3 class="continent_drop"> Europe (+)</h3>
-<ul>
+<% @continents.each do |continent| %>
+<div class="<%=continent.name%>"> <%= continent.name %>(+) </div>
+<% end %>
+<!-- <ul>
 
   <% @destinations.each do |destination| %>
 <%=link_to "#{destination.location}", destination_path(destination) %>
   <% end %>
-</ul>
-<h3 class="continent_drop"> North America (+)</h3>
-<h3 class="continent_drop"> South America (+)</h3>
+</ul> -->
+
 
 
 <%= link_to "Add a new Destination", new_destination_path %>
+</div>

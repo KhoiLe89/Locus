@@ -7,4 +7,5 @@ root "destinations#index"
   resources :reviews
     end
     resources :reviews
+    resources :continents
 end

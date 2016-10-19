@@ -7,7 +7,41 @@
 .continent_drop {
   font-family: 'Quicksand', sans-serif;
 }
-
+.index_div{
+  background: url("https://upload.wikimedia.org/wikipedia/en/9/99/BlankMap-World-Continents-Coloured.png");
+  background-size: cover;
+  height: 600px;
+  width: 100vw;
+  position: absolute;
+}
+.Asia{
+  position: relative;
+  left: 800px;
+  top: 75px;
+}
+.Africa{
+  position: relative;
+  left: 550px;
+  top: 215px;
+}
+.Australia{
+  position: relative;
+  top: 350px;
+  left: 960px;
+}
+.Europe{
+  position: relative;
+  left: 600px;
+}
+.North_America{
+  position: relative;
+  left: 100px;
+}
+.South_America{
+  position: relative;
+  top: 230px;
+  left: 215px;
+}
 body{
   font-family: 'Quicksand', sans-serif;
   // display: flex;
