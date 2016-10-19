@@ -30,5 +30,4 @@
   <% end %>
   </div>
 </div>
-
-<%= link_to "Delete", activity_path(@activity), method: :delete %>
+<%= link_to "Edit this Activity", edit_destination_activity_path(@activity) %> | <%= link_to "Delete", activity_path(@activity), method: :delete %>

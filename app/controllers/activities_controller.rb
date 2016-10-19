@@ -14,7 +14,7 @@ class ActivitiesController < ApplicationController
   def create
     @destination = Destination.find(params[:destination_id])
     @activity = @destination.activities.create(activities_params)
-    redirect_to destinations_path(@destination)
+    redirect_to destination_activities_path(@destination)
   end
   def edit
     @activity = Activity.find(params[:id])
@@ -25,7 +25,6 @@ class ActivitiesController < ApplicationController
     redirect_to activity_path(@activity)
   end
   def destroy
-    @review = Review.find(params[:id])
     @activity = Activity.find(params[:id])
     @activity.destroy
     redirect_to root_path

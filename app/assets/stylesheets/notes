@@ -17,4 +17,6 @@ address div on the right of images= address_div
 each continent name = its class name
 
 
-check if you can make reviews on activity 
+check if you can make reviews on activity
+
+<%= link_to "Delete this Destination", continent_destination_path(@continent, @destination), method: :delete %>

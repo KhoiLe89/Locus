@@ -11,10 +11,11 @@ class DestinationsController < ApplicationController
   def create
     @continent = Continent.find(params[:continent_id])
     @destination = @continent.destinations.create(destination_params)
-    redirect_to continent_destinations_path(@destination)
+    redirect_to continent_destinations_path(@continent)
   end
   def show
-    @destination = Destination.find(params[:id])
+    @destination = Destination.find if params[:destination_id] == params[:destination_id]
+
     @activity = Activity.find(params[:id])
   end
   def edit
