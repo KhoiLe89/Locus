@@ -1,6 +1,6 @@
-class ContinentController < ApplicationController
+class ContinentsController < ApplicationController
   def index
-  @continents = Continent.all
+    @continents = Continent.all
   end
   def show
     @continent = Continent.find(params[:id])

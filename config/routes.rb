@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-root "continent#index"
+root "continents#index"
   resources :destinations, only: [:index, :show] do
     resources :activities, except: [:index, :show]
     end
