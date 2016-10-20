@@ -1,6 +1,8 @@
+<div class="<%=@continent.name%>1">
 <ul>
 <% @destinations.each do |destination| %>
 <li><%= link_to destination.location, destination_activities_path(destination) %></li>
 <% end %>
 </ul>
 <%= link_to "Add a new Destination", new_continent_destination_path(@continent) %>
+</div>

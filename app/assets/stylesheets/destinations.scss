@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .nav_bar{
   background-color: #84CDFC;
-
 }
 a:link, a:visited{
  color: black;
@@ -43,6 +42,67 @@ a:link, a:visited{
 .Europe{
   position: relative;
   left: 600px;
+}
+.Europe1{
+  background: url("http://www.clker.com/cliparts/U/2/3/Z/i/x/montessori-europe-continent-map-hi.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  height: 600px;
+  width: 100vw;
+  position: absolute;
+  overflow: scroll;
+}
+.Asia1{
+  background: url("https://openclipart.org/image/800px/svg_to_png/88915/europa.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  height: 600px;
+  width: 100vw;
+  position: absolute;
+  overflow: scroll;
+}
+
+.Africa1,{
+  background: url("http://www.clipartbest.com/cliparts/bTy/7Mp/bTy7MpAbc.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  height: 600px;
+  width: 100vw;
+  position: absolute;
+  overflow: scroll;
+}
+.Australia1{
+  background: url("http://www.clipartbest.com/cliparts/di7/j4X/di7j4Xyi9.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  height: 600px;
+  width: 100vw;
+  position: absolute;
+  overflow: scroll;
+}
+.South_America1{
+  background: url("http://yoursafe24.com/fileadmin/user_upload/suedamerika_gross.jpg") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  height: 600px;
+  width: 100vw;
+  position: absolute;
+  overflow: scroll;
+}
+.North_America1{
+  background: url("https://www.fineos.com/wp-content/uploads/2006/03/map-north-america.gif") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  height: 600px;
+  width: 100vw;
+  position: absolute;
+  overflow: scroll;
 }
 .North_America{
   position: relative;
