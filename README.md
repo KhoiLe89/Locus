@@ -36,14 +36,18 @@ The application itself follows the CRUD model. Create, Read, Update and Destroy.
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 ## History
-TODO: Write history
-## Credits
-TODO: Write credits
-## License
-TODO: Write license
+The commit history involves 12 commits.
+  1. Initial Commit. Full CRUD functionality with Destinations and Activities. But as a result of adding another model, functionality was inhibited.
+  2. CSS Work. This Commit was merged from a different branch, the aesthetics of the app was beginning to come together.
+  3. Final Commit. All CRUD functionality was achieved. 
 ## Technologies Used
 The main technologies used were HTML, CSS, and Ruby on Rails along with Postgres. HTML via Embedded Ruby(ERB) was used for the content, CSS was used to style the pages, and Ruby on Rails allowed users to Create/Read/Update/Destroy.
+## To Do
+The app itself is fully functional but here are a few things I'd like to remedy and add:
+  1. Devise
+  2. Aesthetics
+  3. User Authentication
 ## Credits
-To GA WDI-12 Instructors: Adrian Maseda, Nick Olds, Jesse Shawl. 
+To GA WDI-12 Instructors: Adrian Maseda, Nick Olds, Jesse Shawl.
 And to my peers who gave me plenty of input and help.
 ]]>
