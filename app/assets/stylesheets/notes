@@ -20,3 +20,11 @@ each continent name = its class name
 check if you can make reviews on activity
 
 <%= link_to "Delete this Destination", continent_destination_path(@continent, @destination), method: :delete %>
+
+
+Checklist: FINISH README
+  Destinations: Add/Delete/update
+
+  Activities: Add/Delete/Update
+
+  Reviews:    Add/Update/ DONT HAVE DELETE ACTION.

@@ -16,10 +16,10 @@ class ReviewsController < ApplicationController
     @review = Review.find(params[:id])
   end
   def update
-    # @activity = Activity.find(params[:id])
+
     @review = Review.find(params[:id])
     @review.update(review_params)
-    redirect_to root_path
+    redirect_to activity_path(@review.activity)
   end
   def destroy
     @activity = Activity.find(params[:activity_id])

@@ -14,22 +14,24 @@ class DestinationsController < ApplicationController
     redirect_to continent_destinations_path(@continent)
   end
   def show
-    @destination = Destination.find if params[:destination_id] == params[:destination_id]
-
-    @activity = Activity.find(params[:id])
+    @continent = Continent.find(params[:continent_id])
+    @destination = @continent.destinations.find(params[:id])
   end
   def edit
+    @continent = Continent.find(params[:continent_id])
     @destination = Destination.find(params[:id])
   end
   def update
+    @continent = Continent.find(params[:continent_id])
+
     @destination = Destination.find(params[:id])
     @destination.update(destination_params)
-    redirect_to destination_path(@destination)
+    redirect_to destination_activities_path(@destination)
   end
   def destroy
     @destination = Destination.find(params[:id])
     @destination.destroy
-    redirect_to destinations_path
+    redirect_to root_path
   end
 private
   def destination_params

@@ -1,8 +1,8 @@
 class ActivitiesController < ApplicationController
   def index
     @destination = Destination.find(params[:destination_id])
+    @continent=@destination.continent
     @activities = @destination.activities
-
   end
   def show
     @activity = Activity.find(params[:id])
@@ -22,7 +22,7 @@ class ActivitiesController < ApplicationController
   def update
     @activity = Activity.find(params[:id])
     @activity.update(activities_params)
-    redirect_to activity_path(@activity)
+    redirect_to destination_activities_path(@activity.destination)
   end
   def destroy
     @activity = Activity.find(params[:id])

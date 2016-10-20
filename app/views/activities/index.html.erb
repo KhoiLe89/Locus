@@ -1,8 +1,12 @@
-<h1> All the activities of PLACEHOLDER </h1>
+<div class="activities_index">
+<h1> Activities to enjoy in <%=@destination.location%> </h1>
 <ul>
 <% @activities.each do |activity| %>
 <li><%=link_to activity.name, activity_path(activity) %></li>
 <% end %>
 </ul>
-<%= link_to "Add an activity", new_destination_activity_path(@destination) %>
+<%= link_to "Add an activity", new_destination_activity_path(@destination) %> | <%= link_to "Delete this Destination", continent_destination_path(@continent, @destination), method: :delete %> | <%= link_to "Edit this Destination", edit_continent_destination_path(@continent, @destination) %>
+
+
+
 </div>

@@ -24,7 +24,7 @@
   <div class="review_div">
     <% @activity.reviews.each do |review| %>
     <div class="quote_div">
-      <h3 class="quote"><%=link_to "Quote goes here", edit_review_path(review) %>  </h3>
+      <h3 class="quote"><%=link_to review.quote, edit_review_path(review) %>  </h3>
       <%= review.body %>
     </div>
   <% end %>

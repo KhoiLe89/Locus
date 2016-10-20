@@ -1,6 +1,14 @@
 // Place all the styles related to the activities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.activities_index{
+text-align: center;
+
+}
+ul{
+  list-style-type: none;
+}
+
 .activity_img{
   height: 150px;
   width: 150px;
@@ -23,7 +31,6 @@
 .column_img{
   display: flex;
   flex-direction: column;
-
 }
 .address_div{
   height: 450px;
@@ -32,7 +39,7 @@
   padding: 20px;
 }
 .review_add{
-  border: 1px solid red;
+  border: 1px solid #969696;
   height: 50px;
   padding: 0 15px 0 15px;
   display: flex;
@@ -43,14 +50,17 @@
   border: 1px solid black;
   height: 1000px;
   display: flex;
-  
+}
+.review_add{
+  background-color: #E6E7EB;
 }
 .review_div{
-  border: 1px solid black;
-  height: 500px;
+  border-style: outset;
+  border-width: 5px;
+  border-color: #969696;
+  border-radius: 10px;
+  height: 100vh;
   width: 600px;
-  display: flex;
-  padding-top: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -71,13 +81,14 @@ aside{
    border: 2px black solid;
 }
 .quote_div{
-  border: 1px solid black;
+  border: 3px groove #BFBFBF;
   height: 150px;
+  border-radius: 10px;
 }
 .quote{
   color: #4EC0FC;
 }
 .button{
   font-family: 'Quicksand', sans-serif;
-  background-color: #FF9F00;
+  background-color: #81CCFE;
 }
