@@ -1,7 +1,11 @@
 class ActivitiesController < ApplicationController
+  # NHO: can you see a line this is repetitive in this controller?
+  # We can help DRY up this controller by using before_action methods to do common tasks such as
+  # find a destination
+
   def index
     @destination = Destination.find(params[:destination_id])
-    @continent=@destination.continent
+    @continent = @destination.continent
     @activities = @destination.activities
   end
   def show

@@ -1,8 +1,10 @@
 class DestinationsController < ApplicationController
+  # NHO: can you see a line this is repetitive in this controller?
+  # We can help DRY up this controller by using before_action methods to do common tasks such as
+  # find a continent
   def index
     @continent = Continent.find(params[:continent_id])
     @destinations = @continent.destinations
-
   end
   def new
     @continent = Continent.find(params[:continent_id])

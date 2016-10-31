@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ /* NHO: love the design and theme! */
  *{
    margin: 0;
  }
@@ -22,6 +24,7 @@
 
 }
 
+/* # NHO: reminder to remove unused / commented out code */
 /*#logo{
   background-color: #D0D5DB;
   background-blend-mode: multiply;
