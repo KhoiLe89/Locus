@@ -11,6 +11,7 @@ Destination.destroy_all
 Continent.destroy_all
 # ActiveRecord::Base.connection.reset_pk_sequence!(’TABLENAME')
 
+# NHO: nice seeds!
 africa = Continent.create(name: "Africa")
 asia = Continent.create(name: "Asia")
 australia = Continent.create(name: "Australia")
